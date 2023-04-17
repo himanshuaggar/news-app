@@ -18,7 +18,7 @@ const NewsCard = ({article:{ description, publishedAt, source, title, url, urlTo
     if(i === activeArticle && elRefs[activeArticle]){
       scrollToRef(elRefs[activeArticle]);
     }
-  }, [ i,activeArticle, elRefs]);
+  }, [ i, activeArticle, elRefs]);
 
   return (
     <Card ref={elRefs[i]} className={classNames( activeArticle === i ? classes.activeCard : classes.card)}>
